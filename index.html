@@ -6,5 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form Challenge</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+      <main>
+        <form action="/" method="GET">
+          <section>
+            <h2>How can we help you?</h2>
+            <ul>
+              <li>
+                <label for="user-name">Your Name</label>
+                <input type="text" name="user-name" id="user-name" required />
+              </li>
+              <li>
+                <label for="user-email">You E-Mail Address</label>
+                <input
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  required
+                />
+              </li>
+              <li>
+                <label for="user-phone">Your Phone Number</label>
+                <input
+                  type="number"
+                  name="user-phone"
+                  id="user-phone"
+                  maxlength="11"
+                  required
+                />
+              </li>
+              <li>
+                <label for="user-message">Your Message</label>
+                <textarea
+                  name="user-message"
+                  id="user-message"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+              </li>
+              <li>
+                <label for="referred-by">How did you find us?</label>
+                <select name="referred-by" id="referred-by" required>
+                  <option value="web-search">Web Search</option>
+                  <option value="facebook">Facebook Ad</option>
+                  <option value="youtube">Youtube Ad</option>
+                </select>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>How should we reply?</h2>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="reply-via"
+                  value="call"
+                  id="call"
+                  required
+                />
+                <label for="call">Call me</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="reply-via"
+                  value="email"
+                  id="email"
+                  required
+                />
+                <label for="email">Send me an email</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="reply-via"
+                  value="no-reply"
+                  id="no-reply"
+                  required
+                />
+                <label for="no-reply">Don't reply</label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <input type="checkbox" name="terms" id="terms" required />
+            <label for="terms">Accept Terms</label>
+          </section>
+          <section>
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+          </section>
+        </form>
+      </main>
+    </header>
+  </body>
 </html>
