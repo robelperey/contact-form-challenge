@@ -5,13 +5,12 @@ html {
   --color-primary: #4e6e81;
   --color-seconday: #f9dbbb;
   --color-accent: #ff0303;
-
-  font-family: "Roboto", sans-serif;
-  color: var(--color-grey);
 }
 
 body {
   background-color: var(--color-seconday);
+  font-family: "Roboto", sans-serif;
+  color: var(--color-grey);
 }
 
 ul {
@@ -35,6 +34,12 @@ form textarea {
   margin-bottom: 1rem;
   border: 1px solid var(--color-primary);
   box-sizing: border-box;
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  background-color: var(--color-seconday);
 }
 
 form select {
@@ -61,6 +66,10 @@ form button {
   border-radius: 6px;
 }
 
+form button:hover {
+  transform: scale(1.1);
+}
+
 form button[type="reset"] {
   color: white;
   background-color: var(--color-accent);
@@ -77,6 +86,7 @@ form {
   margin: 3rem auto;
   padding: 1rem;
   border-radius: 6px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .inline-form-control {
